@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="h-100 w-100">
+<head>
+    <title>Home Page | Inventory Management Application</title>
+    <link rel="stylesheet" href="../scss/custom.css">
+    <link rel="stylesheet" href="../scss/home-page.css">
+    <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js"></script>
+    <script src="../js/home-page.js" defer></script>
+</head>
+<body class="w-100 h-100 pt-5 px-5 pb-3 d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center w-100">
+        <h3>Home | Inventory Management Application</h3>
+        <a class="d-flex gap-2 text-black text-decoration-none fw-bold" href="https://github.com/silegrb/itacademy-inventory-management-application">
+            <img class="icon" src="../icons/code.svg" alt="Code Icon">
+            Source code
+        </a>
+    </div>
+    <div class="flex-grow-1 gap-2 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-primary">Title</h2>
+        <h5 class="w-50 text-center">
+            Lamine Yamal Nasraoui Ebana (Esplugues de Llobregat, 13. srpnja 2007.) španjolski je nogometaš koji igra na poziciji desnog krila. Trenutačno igra za Barcelonu.
+            Klupska karijera: S 15 godina, 9 mjeseci i 16 dana debitirao je 29. travnja 2023. za Barcelonu zamijenivši Gavija u 83. minuti utakmice La Lige protiv Betisa
+            koji je poražen 4:0.[2] Time je postao peti najmlađi igrač u povijesti La Lige,[2] kao i najmlađi igrač Barcelone u povijesti tog natjecanja.
+        </h5>
+        <div class="d-flex gap-2">
+            <button id="sign-in-open-modal-button" class="btn button">Sign In</button>
+            <button id="sign-up-open-modal-button" class="btn button">Sign Up</button>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-end border border-top pt-3">
+        <div class="d-flex flex-column gap-2">
+            <div class="d-flex gap-2">
+                <span class="text-secondary">Author:</span>
+                <span class="fw-bold">Muratović Adnan</span>
+            </div>
+            <div class="d-flex gap-2">
+                <span class="text-secondary">Email:</span>
+                <span class="fw-bold">muratovica535@gmail.com</span>
+            </div>
+        </div>
+        <span>All Rights reserved, &copy; Muratovic Adnan, 2023</span>
+    </div>
+    <div id="sign-in-modal" class="d-none h-100 fixed-top custom-modal justify-content-center align-items-center">
+        <div class="d-flex flex-column gap-2 w-25 p-5 bg-white border border-1">
+            <div class="d-flex justify-content-between w-100 align-items-center">
+                <h3 class="text-primary">Sign In</h3>
+                <img id="sign-in-close-modal-button" src="../icons/x-mark.svg" alt="X Mark" class="icon">
+            </div>
+            <label for="sign-in-username" class="fw-bold">Username</label>
+            <input id="sign-in-username" placeholder="Username" type="text" class="form-control w-100">
+            <label for="sign-in-password" class="fw-bold">Password</label>
+            <input id="sign-in-password" placeholder="Password" type="password" class="form-control w-100">
+            <button class="btn button">Sign In</button>
+        </div>
+    </div>
+    <div id="sign-up-modal" class="d-none h-100 fixed-top custom-modal justify-content-center align-items-center">
+        <div class="d-flex flex-column gap-2 w-25 p-5 bg-white border border-1">
+            <div class="d-flex justify-content-between w-100 align-items-center">
+                <h3 class="text-primary">Sign Up</h3>
+                <img id="sign-up-close-modal-button" src="../icons/x-mark.svg" alt="X Mark" class="icon">
+            </div>
+            <label for="sign-up-full-name" class="fw-bold">Full Name</label>
+            <input id="sign-up-full-name" placeholder="Full Name" type="text" class="form-control w-100">
+            <label for="sign-up-username" class="fw-bold">Username</label>
+            <input id="sign-up-username" placeholder="Username" type="text" class="form-control w-100">
+            <label for="sign-up-password" class="fw-bold">Password</label>
+            <input id="sign-up-password" placeholder="Password" type="password" class="form-control w-100">
+            <label for="sign-up-confirm-password" class="fw-bold">Confirm Password</label>
+            <input id="sign-up-confirm-password" placeholder="Confirm Password" type="password" class="form-control w-100">
+            <span id="sign-up-error" class="text-danger"></span>
+            <button class="btn button" id="sign-up-button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
